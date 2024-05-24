@@ -124,7 +124,7 @@
             rooms;
         console.log(url);
         axios.get(url).then((response) => {
-            price = 'CHF ' + response.data;
+            price = 'CHF ' + response.data.prediction;
         });
 	}
 </script>
